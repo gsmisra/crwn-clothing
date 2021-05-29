@@ -37,7 +37,7 @@ class Directory extends React.Component{
                   id: 4,
                   linkUrl: 'shop/womens',
                   size: 'large',
-                  inStore: 'available'
+                  inStore: 'not available'
                 },
                 {
                   title: 'mens',
@@ -46,7 +46,7 @@ class Directory extends React.Component{
                   id: 5,
                   linkUrl: 'shop/mens',
                   size: 'large',
-                  inStore: 'not available'
+                  inStore: 'available'
                 }
               ]
         }
@@ -62,7 +62,8 @@ class Directory extends React.Component{
                         title={section.title} 
                         imageUrl={section.imageUrl} 
                         size={section.size} 
-                        available={section.inStore}/>
+                        available={section.inStore}
+                        linkUrl={section.linkUrl}/>
                     ))
                 }
             </div>
